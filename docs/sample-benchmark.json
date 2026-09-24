@@ -1,0 +1,38 @@
+[
+  {
+    "source": "The customer must submit the documents before Friday.",
+    "language": "fr",
+    "translation": "Le client doit soumettre les documents avant vendredi.",
+    "expected": "GOOD"
+  },
+  {
+    "source": "The customer must submit the documents before Friday.",
+    "language": "fr",
+    "translation": "Le client peut soumettre les documents avant vendredi.",
+    "expected": "BAD"
+  },
+  {
+    "source": "Your invoice total is 125 USD.",
+    "language": "de",
+    "translation": "Der Rechnungsbetrag beträgt 125 USD.",
+    "expected": "GOOD"
+  },
+  {
+    "source": "Your invoice total is 125 USD.",
+    "language": "de",
+    "translation": "Der Rechnungsbetrag beträgt 150 USD.",
+    "expected": "BAD"
+  },
+  {
+    "source": "Welcome back, {name}.",
+    "language": "es",
+    "translation": "Bienvenido de nuevo, {name}.",
+    "expected": "GOOD"
+  },
+  {
+    "source": "Welcome back, {name}.",
+    "language": "es",
+    "translation": "Bienvenido de nuevo, nombre.",
+    "expected": "BAD"
+  }
+]

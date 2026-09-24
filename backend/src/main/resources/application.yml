@@ -1,0 +1,29 @@
+server:
+  address: ${BIND_ADDRESS:127.0.0.1}
+  port: ${PORT:8080}
+  tomcat:
+    max-http-form-post-size: 20MB
+spring:
+  datasource:
+    url: ${DATABASE_URL:jdbc:h2:file:./data/lingua;DB_CLOSE_ON_EXIT=FALSE}
+    username: ${DATABASE_USER:sa}
+    password: ${DATABASE_PASSWORD:}
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+  mvc:
+    problemdetails:
+      enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+app:
+  provider: ${LLM_PROVIDER:demo}
+  api-key: ${OPENAI_API_KEY:}
+  access-token: ${APP_ACCESS_TOKEN:}
+  seed-demo: ${SEED_DEMO:true}
+  output-limit: 8192
+  generator: gpt-4.1-2025-04-14
+  validator: gpt-4.1-mini-2025-04-14

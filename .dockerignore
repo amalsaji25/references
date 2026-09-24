@@ -1,0 +1,14 @@
+.git
+.env
+.env.*
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/*.keystore
+**/node_modules
+**/target
+**/dist
+**/data
+**/*.tsbuildinfo
+*.zip

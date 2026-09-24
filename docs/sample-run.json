@@ -1,0 +1,10 @@
+{
+  "name": "Customer portal sample",
+  "sentences": ["Welcome back, {name}.", "Your invoice total is 125 USD.", "The customer must submit the documents before Friday."],
+  "languages": ["fr", "de", "es", "it", "pt", "ja"],
+  "mode": "FULL",
+  "auditPercent": 20,
+  "budgetUsd": 5,
+  "glossary": [],
+  "context": "Customer portal messages. Use a professional and friendly tone."
+}
